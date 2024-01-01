@@ -7,6 +7,25 @@
     </a>
 </p>
 
+
+# Installation
+
+## Conda Setup
+```shell
+conda install mamba -c conda-forge
+mamba create -n peract_t python=3.9
+conda activate peract_t
+```
+
+## Install Dependencies
+```shell
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install scipy ftfy regex tqdm torch git+https://github.com/openai/CLIP.git einops pyrender==0.1.45 trimesh==3.9.34 pycollada==0.6
+```
+
+
+
+
 ## Annotated Tutorial 
 
 **Important: Before starting, change the runtime to GPU.**
