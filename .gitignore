@@ -1,5 +1,7 @@
 # Custom
-
+replay_test/
+replay_train/
+checkpoint/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

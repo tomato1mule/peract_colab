@@ -161,7 +161,7 @@ def visualise_voxel(voxel_grid: np.ndarray,
         s.add(cam, pose=t.pose)
 
         if render_gripper:
-            gripper_trimesh = trimesh.load('peract_colab/meshes/hand.dae', force='mesh')
+            gripper_trimesh = trimesh.load('peract_colab/meshes/hand.stl', force='mesh')
             gripper_trimesh.vertices *= gripper_mesh_scale
             radii = np.linalg.norm(gripper_trimesh.vertices - gripper_trimesh.center_mass, axis=1)
             gripper_trimesh.visual.vertex_colors = trimesh.visual.interpolate(radii * gripper_mesh_scale, color_map='winter')
